@@ -1,0 +1,79 @@
+body {
+    height: 100%;
+    overflow-x: hidden;
+    /*All fonts should be default set to this*/
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 1000;
+    font-style: bold;
+}
+
+/*Landing page*/
+
+.header-text {
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    font-size: 4vw;
+}
+
+.alumni {
+    font-size: 6vw;
+    text-align: center;
+    font-style: bold;
+    margin-top: 8vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+/*Lol ok something's already broken with this it's not applying*/
+.logo-img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-right: 5vw;
+}
+
+.home-buttons {
+    background-color: black;
+    color: #39B54A;
+    padding: 5vh;
+    font-size: 4vh;
+    border-radius: 30px;
+}
+
+.home-buttons:hover {
+    background-color: #39B54A;
+    color: white;
+    transition: 1s;
+}
+
+/*This might work to make the text cool- like make it look outlined like adobe
+https://css-tricks.com/adding-stroke-to-web-text/ */
+h1 {
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+
+/*Teacher statement page*/
+.teacherNote {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 2vh;
+    height: 100vh;
+    font-family: 'Merriweather', serif;
+    line-height: 100vh;
+}
+
+.teacherNoteText {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Alumni*/
+/*Alright time to suffer uh... I need to learn how to do vertical navbars my thought is let's just... do the class as a title and use a vertical nav and try and align it in a div?*/
