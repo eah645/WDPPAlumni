@@ -7,73 +7,132 @@ body {
     font-style: bold;
 }
 
-/*Landing page*/
-
-.header-text {
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+    border-left: 1px solid #39B54A; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #39B54A; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  /*Landing page*/
+  
+  .header-text {
     text-align: center;
     margin-top: 5vh;
     margin-left: 10vh;
     margin-right: 10vh;
     font-size: 4vw;
-}
-
-.alumni {
+  }
+  
+  .alumni {
     font-size: 6vw;
     text-align: center;
     font-style: bold;
     margin-top: 8vh;
     margin-left: 10vh;
     margin-right: 10vh;
-}
-
-/*Lol ok something's already broken with this it's not applying*/
-.logo-img {
+  }
+  
+  /*Lol ok something's already broken with this it's not applying*/
+  .logo-img {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
     margin-right: 5vw;
-}
+  }
 
-.home-buttons {
+  .btn-div {
+    display: flex;
+  justify-content: center;
+  }
+  
+  .home-buttons {
     background-color: black;
     color: #39B54A;
     padding: 5vh;
     font-size: 4vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
     border-radius: 30px;
-}
-
-.home-buttons:hover {
+    transition: 1s;
+  }
+  
+  .home-buttons:hover {
     background-color: #39B54A;
     color: white;
     transition: 1s;
-}
-
-/*This might work to make the text cool- like make it look outlined like adobe
-https://css-tricks.com/adding-stroke-to-web-text/ */
-h1 {
+  }
+  
+  /*This might work to make the text cool- like make it look outlined like adobe
+  https://css-tricks.com/adding-stroke-to-web-text/ */
+  h1 {
     color: black;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
-
-
-/*Teacher statement page*/
-.teacherNote {
+  
+  
+  /*Teacher statement page*/
+  .teacherNote {
     margin-left: 5vw;
     margin-right: 5vw;
     font-size: 2vh;
     height: 100vh;
     font-family: 'Merriweather', serif;
     line-height: 100vh;
-}
-
-.teacherNoteText {
+  }
+  
+  .teacherNoteText {
     line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
-}
-
-/*Alumni*/
-/*Alright time to suffer uh... I need to learn how to do vertical navbars my thought is let's just... do the class as a title and use a vertical nav and try and align it in a div?*/
+  }
+  
+  /*Alumni*/
+  /*Alright time to suffer uh... I need to learn how to do vertical navbars my thought is let's just... do the class as a title and use a vertical nav and try and align it in a div?*/
+  nav {
+    background-color: black;
+    border-bottom: 4px solid #39B54A;
+  }
+  
+  .alumni-title {
+    /*Holy shit check out the style it's so cool*/
+    text-align: center;
+    color: black;
+    -webkit-text-fill-color: black;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #39B54A;
+  }
+  
+  /*Can we do a hover effect with like a green background- I really like the style of things like- the green working as a divider and use that as a box shadow please*/
+  .card {
+    background-color: black;
+    /*Should the font be green or white... I like the green but we'll get another opinion*/
+    color: #39B54A;
+    border: 2px solid #39B54A;
+    margin: 20px;
+    padding: 20px;
+    /*Change this on smaller screens this works on my pc screen on mobile needs to stack*/
+    width: 22vw;
+    max-height: auto;
+  }

@@ -2,61 +2,366 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <!--Animation css (credit: https://animate.style/)-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--Adobe font (Myriad Pro)-->
-    <link rel="stylesheet" href="https://use.typekit.net/ebw2ypa.css">
-    <!--My css-->
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!--Animation css (credit: https://animate.style/)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Adobe font (Myriad Pro)-->
+  <link rel="stylesheet" href="https://use.typekit.net/ebw2ypa.css">
+  <!--My css-->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
-    <script src="https://unpkg.com/vue@3.0.2"></script>
-    <!--JQuery link idk if this'll work-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="icon" href="Images\WDPPLogoGreenandBlack.png">
-    <title>MRHS WDPP Alumni</title>
+  <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <!--JQuery link idk if this'll work-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="icon" href="Images\WDPPLogoGreenandBlack.png">
+  <title>MRHS WDPP Alumni</title>
 </head>
 
 <!--Nav-->
+<!--Why is the nav fucking broken :) this happens every fucking time- -->
+<!--Write an onclick function to add the class "navbar-expand-xl" onclick I'm gonna remove it so it doesn't collapse-->
 <nav class="navbar navbar-expand-xl navbar-light sticky-top">
-    <!--So move this to figure out where the fuck it goes- I still need to figure out the lag issue-->
-    <div class="justify-content-start">
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item home-icon">
-                <b><a class="nav-link active active-hover active-anim" href="index.html"><img src="images\Logo2-3.png"
-                            alt="Home" class="nav-image"></a></b>
-            </li>
-            <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
-                <li class="nav-item">
-                    <b><a class="nav-link" href="workExp.html">Work Experience</a></b>
-                </li>
-                <li class="nav-item">
-                    <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
-                </li>
-                <li class="nav-item">
-                    <b><a class="nav-link" href="contact.html">Contact</a></b>
-                </li>
-            </div>
-        </ul>
-    </div>
-    <div class="willYouGoRight">
-        <button class="navbar-toggler" id="goRight" type="button" data-toggle="collapse"
-            data-target="#myNavbarToggler13" aria-controls="myNavbarToggler13" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+  <!--So move this to figure out where the fuck it goes- I still need to figure out the lag issue-->
+  <div class="justify-content-start">
+    <ul class="navbar-nav me-auto">
+      <!--Or- it might be this class the "navbar-collapse" -->
+      <!--It is the navbar collapse now I just need to make it work because it's doing the nav thing of not fucking working-->
+      <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
+        <li class="nav-item">
+          <b><a class="nav-link" href="workExp.html">Work Experience</a></b>
+        </li>
+        <li class="nav-item">
+          <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
+        </li>
+        <li class="nav-item">
+          <b><a class="nav-link" href="contact.html">Contact</a></b>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <!--Test can I center align text in here-->
+  <div class="alumni-title mx-auto">
+    <h2 id="nav-title">Class of 2023</h2>
+  </div>
+  <div class="willYouGoRight">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
+      aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
 </nav>
-
+<!--Alright we'll finish the nav later... so how do I do this... I could do a class of hidden on each section to make this easy and link to like... multiple different json files... I should do the card first huh-->
 
 <body>
-    
+  <!--The body just has cards. That- that's literally it I'm thinking do separate json files for each one and do class=hidden or whatever it is so that then I can just use different onclick functions to make it visible-->
+  <!--Alright yeah so for the title let's change that with a function- before this I should fix the navbar huh... or build a footer I'll do that-->
+  <div id="2023">
+    <div class="row">
+      <!--This is vue :) so yes this means constantly adding new vue instances but that part of it doesn't seem hard? Most of it's just copying codes and changing the vue id by like 1 number-->
+      <!--Ok so. Do I want to do this by like individually making each card or using JSON and changing which json file is displayed based on which nav item you click on?
+      Doing it with the nav probably means you just... call a different function? Or- well no you'd have all json files active most likely then just change what's being displayed with classes of display none and display visible
+      Let's try with json files that way- well is it harder to maintain that way? Idk... what makes it easier to update? Making a new vue instance and writing a new function or... both suck but maybe the adding each individually is better-->
+      <!--So we're gonna build a test one using my stuff because... I have it and so far only 5 people filled out the form lol-->
+      <!--Yeah like- only 6 people did the form so I'm gonna have to go look up everyone's githubs... fun-->
+      <!--Let's get started I'll do it with who I have- I have everyone's names and colleges it's just their portfolios- I should also
+      probably leave out the jokes lol-->
+
+      <!--Isabel Abreu-->
+      <div class="card">
+        <h3 class="card-title">Isabel Abreu</h3>
+        <img src="Images\2023\IsabelAbreu.png" alt="Isabel's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: NJIT</p>
+          <small>Major: Human Computer Interaction</small>
+          <p>Email: isabeljulianaabreu@gmail.com</p>
+          <p>" What's the difference between a poorly dressed man on a tricycle and a well-dressed man on a bicycle?" <br>
+            "Attire"</p>
+        </div>
+        <a href="https://isabeljar.github.io/Portfolio-Abreu/index.html" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Jake Adams-->
+      <div class="card">
+        <h3 class="card-title">Jake Adams</h3>
+        <img src="#" alt="Jake's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Deleware</p>
+          <p>Email: </p>
+        </div>
+        <!--I tried to find the link I think that's it-->
+        <a href="https://523jadams.github.io/NJIT-Portfolio/index.html" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Owen Ambrose-->
+      <div class="card">
+        <h3 class="card-title">Owen Ambrose</h3>
+        <img src="#" alt="Owen's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Deleware</p>
+          <p>Email: </p>
+        </div>
+        <a href="https://replit.com/@OwenAmbrose/Portfolio?authuser=1" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Shaheer Basit-->
+      <div class="card">
+        <h3 class="card-title">Shaheer Basit</h3>
+        <img src="Images\2023\ShaheerBasit.png" alt="Shaheer's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>Email: </p>
+        </div>
+        <a href="https://portfolio2023.shaheerb.repl.co/" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Nicholas Billitteri-->
+      <div class="card">
+        <h3 class="card-title">Nicholas Billitteri</h3>
+        <img src="" alt="Nicholas' Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rutgers</p>
+          <p>Email: </p>
+          </div>
+          <!--I know he built a good page I can't find the link to it-->
+        <a href="" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Ethan Chiu-->
+      <div class="card">
+        <h3 class="card-title">Ethan Chiu</h3>
+        <img src="Images\2023\EthanChiu.png" alt="Ethan's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>Email: </p>
+        </div>
+        <!--Holy shit he has the onscoll percent bars that's so cool-->
+        <a href="https://ethan-ch1u.github.io/Chiu-P4/" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Alexander D'Ambrosio-->
+      <div class="card">
+        <h3 class="card-title">Alex D'Ambrosio</h3>
+        <img src="#" alt="Alex's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Seton Hall</p>
+          <p>Email: </p>
+          </div>
+        <a href="https://isabeljar.github.io/Portfolio-Abreu/index.html" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Fernando Davila-Torres-->
+      <div class="card">
+        <h3 class="card-title">Fernando Davila-Torres</h3>
+        <img src="" alt="Fernando's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College:</p>
+          <p>Email: </p>
+        </div>
+        <!--Don't see a link-->
+        <a href="" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Jolie Eskander-->
+      <div class="card">
+        <h3 class="card-title">Jolie Eskander</h3>
+        <img src="#" alt="Jolie's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Montclair State</p>
+          <p>Email: </p>
+        </div>
+        <a href="" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Sergio Espinal-->
+      <div class="card">
+        <h3 class="card-title">Sergio Espinal</h3>
+        <img src="Images\2023\SergioEspinal.png" alt="Sergio's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Stevens Institute of Technology</p>
+          <small>Major: Software Engineering</small>
+          <p>Email: Espinaljrs@gmail.com</p>
+          <p>"You: I'm so hungry right now"<br>
+          "Me: Hi so hungry right now, I'm dad!"<br>
+          "Both of us: HAHAHA that was so funny!!! (This definitely doesn't get old after a year and a half, trust me)</p>
+        </div>
+        <a href="https://serg-ioe.github.io/2023Portfolio" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Justin Feldstein-->
+      <div class="card">
+        <h3 class="card-title">Justin Feldstein</h3>
+        <img src="#" alt="Justin's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Deleware</p>
+          <p>Email: </p>
+          </div>
+        <a href="" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Hayley Gold-->
+      <div class="card">
+        <h3 class="card-title">Hayley Gold</h3>
+        <img src="Images\2023\HayleyGold.png" alt="Hayley's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Syracuse University</p>
+          <small>Major: Computer Science</small>
+          <p>Email: hmgold521@gmail.com or hmgold@syr.edu</p>
+          <p>"What's the best air to breathe if you want to be rich?"<br>
+            "Millionaire"
+          </p>
+        </div>
+        <a href="https://portfolio-2.hayleyg2.repl.co/?authuser=0" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--From here I don't have any of the portfolio links so either you can add them or add them to the google doc and I'll add it-->
+      <!--Andrew Goodman-->
+      <div class="card">
+        <h3 class="card-title">Andrew Goodman</h3>
+        <img src="#" alt="Andrew's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Quinnipac University</p>
+          <p>Email: </p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Jacob Heller-->
+      <div class="card">
+        <h3 class="card-title">Jacob Heller</h3>
+        <img src="#" alt="Jacob Heller's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rutgers University</p>
+          <p>Email: </p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Erin Hirschberger-->
+      <div class="card">
+        <h3 class="card-title">Erin Hirschberger</h3>
+        <img src="Images\2023\ErinHirschberger.png" alt="Erin's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rutgers University</p>
+          <p>Email: eah31@optimum.net</p>
+          <p>"One shot, that's all you got, write your own story you control the plot"</p>
+        </div>
+        <a href="https://eah645.github.io/SeniorPortfolio/index.html" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Chloe Lee-->
+      <div class="card">
+        <h3 class="card-title">Chloe Lee</h3>
+        <img src="#" alt="Chloe's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: RPI</p>
+          <p>Email: </p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Morgan Marsiello-->
+      <div class="card">
+        <h3 class="card-title">Morgan Marsiello</h3>
+        <img src="#" alt="Morgan's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: University of South Florida</p>
+          <p>Email:</p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Olivia Mertz-->
+      <div class="card">
+        <h3 class="card-title">Olivia Mertz</h3>
+        <img src="#" alt="Olivia's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Sacred Heart University</p>
+          <p>Email:</p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Jesse Padavano-->
+      <div class="card">
+        <h3 class="card-title">Jesse Padavano</h3>
+        <img src="#" alt="Jesse's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College:</p>
+          <p>Email:</p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Zain Rashid-->
+      <div class="card">
+        <h3 class="card-title">Zain Rashid</h3>
+        <img src="#" alt="Zain's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rutgers</p>
+          <p>Email:</p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Clara Schepps-->
+      <div class="card">
+        <h3 class="card-title">Clara Schepps</h3>
+        <img src="#" alt="Clara's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Drexel</p>
+          <p>Email:</p>
+        </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Rohan Shivlani-->
+      <div class="card">
+        <h3 class="card-title">Rohan Shivlani</h3>
+        <img src="Images\2023\RohanShivlani.png" alt="Rohan's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rutgers</p>
+          <p>Email: RohanShivlani12@gmail.com</p>
+          <p>"Work hard, play hard, and live life with no regrets"</p>
+        </div>
+        <a href="https://rohan1203s.github.io/FinalPortfolio/" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Jacob Sze-->
+      <div class="card">
+        <h3 class="card-title">Jacob Sze</h3>
+        <img src="#" alt="Jacob Sze's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rutgers</p>
+          <p>Email: </p>
+          </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Brandon Tepper-->
+      <div class="card">
+        <h3 class="card-title">Brandon Tepper</h3>
+        <img src="#" alt="Brandon's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Michigan State</p>
+          <p>Email: </p>
+          </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Aditya Udhayakumar-->
+      <div class="card">
+        <h3 class="card-title">Aditya Udhayakumar</h3>
+        <img src="#" alt="Aditya's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Temple University</p>
+          <p>Email: </p>
+          </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Griffin Zieden-Weber-->
+      <div class="card">
+        <h3 class="card-title">Griffin Zieden-Weber</h3>
+        <img src="#" alt="Griffin's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: Rowan University</p>
+          <p>Email: </p>
+          </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      <!--Maxim Zinchenko-->
+      <div class="card">
+        <h3 class="card-title">Maxim Zinchenko</h3>
+        <img src="#" alt="Maxim's Portfolio" class="alumni-img">
+        <div class="card-text">
+          <p>College: </p>
+          <p>Email: </p>
+          </div>
+        <a href="#" class="portfolio-link">Portfolio</a>
+      </div>
+      
+
+    </div>
+  </div>
 </body>
 
 </html>
