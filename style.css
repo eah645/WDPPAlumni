@@ -116,9 +116,48 @@ body {
     border-bottom: 4px solid #39B54A;
   }
 
-  .nav-link {
-    color: white;
+
+  .navbar {
+    padding: 0;
   }
+  
+  .navbar .navbar-nav .nav-link {
+    padding: 1em;
+  }
+  
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    background-color: #b84c05;
+    width: 0%;
+    height: 4px;
+    transition: all .5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+  
+  .banner {
+    background: url("EatingOut2.jpg");
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 100%;
+  }
+  
 
   .alumni-title {
     /*Holy shit check out the style it's so cool*/
