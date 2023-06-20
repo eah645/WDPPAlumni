@@ -24,6 +24,7 @@ body {
   }
   
   /* Handle on hover */
+  /*Need to make this a darker shade of green so... fun we'll get that in a minute*/
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
@@ -109,11 +110,16 @@ body {
   
   /*Alumni*/
   /*Alright time to suffer uh... I need to learn how to do vertical navbars my thought is let's just... do the class as a title and use a vertical nav and try and align it in a div?*/
+  /*Vertical nav = put it in a column like col-3*/
   nav {
     background-color: black;
     border-bottom: 4px solid #39B54A;
   }
-  
+
+  .nav-link {
+    color: white;
+  }
+
   .alumni-title {
     /*Holy shit check out the style it's so cool*/
     text-align: center;
@@ -135,4 +141,28 @@ body {
     /*Change this on smaller screens this works on my pc screen on mobile needs to stack*/
     width: 22vw;
     max-height: auto;
+  }
+
+  .portfolio-link {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #39B54A;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid black;
+    transition: 1s;
+    text-decoration: none;
+  }
+
+  .portfolio-link:hover {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #39B54A;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: 1s;
+    text-decoration: none;
   }
