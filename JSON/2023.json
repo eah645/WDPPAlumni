@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Isabel Abreu",
+        "portfolioImg": "Images/2023/IsabelAbreu.png",
+        "college": "College: NJIT",
+        "major": "Major: Human Computer Interaction",
+        "email": "Email: isabeljulianaabreu@gmail.com",
+        "quote": "What's the difference between a poorly dressed man on a tricycle and a well-dressed man on a bicycle?",
+        "punchline": "Attire",
+        "portfolio": "https://isabeljar.github.io/Portfolio-Abreu/index.html"
+    },
+    {
+        "name": "Jake Adams",
+        "portfolioImg": "",
+        "college": "College: Deleware",
+        "portfolio": "https://523jadams.github.io/NJIT-Portfolio/index.html"
+    },
+    {
+        "name": "Owen Ambrose",
+        "portfolioImg": "",
+        "college": "College: Deleware",
+        "portfolio": "https://replit.com/@OwenAmbrose/Portfolio?authuser=1"
+    },
+    {
+        "name": "Shaheer Basit",
+        "portfolioImg": "Images/2023/ShaheerBasit.png",
+        "portfolio": "https://portfolio2023.shaheerb.repl.co/"
+    },
+    {
+        "name": "Nicholas Billitteri",
+        "portfolioImg": ""
+    },
+    {
+        "name": "Ethan Chiu",
+        "portfolioImg": "Images/2023/EthanChiu.png",
+        "portfolio": "https://ethan-ch1u.github.io/Chiu-P4/"
+    },
+    {
+        "name": "Alex D'Ambrosio",
+        "portfolioImg": "",
+        "college": "College: Seton Hall",
+        "portfolio": "https://isabeljar.github.io/Portfolio-Abreu/index.html"
+    },
+    {
+        "name": "Fernando Davila-Torres",
+        "portfolioImg": ""
+    },
+    {
+        "name": "Jolie Eskander",
+        "portfolioImg": "",
+        "college": "College: Monclair State"
+    },
+    {
+        "name": "Sergio Espinal",
+        "portfolioImg": "Images/2023/SergioEspinal.png",
+        "college": "College: Stevens Institute of Technology",
+        "major": "Major: Software Engineering",
+        "email": "Email: Espinaljrs@gmail.com",
+        "quote": "You: I'm so hungry right now",
+        "punchline": "Me: Hi so hungry right now, I'm dad! Both of us: HAHAHA that was so funny!!! (This definitely doesn't get old after a year and a half, trust me)</p>",
+        "portfolio": "https://serg-ioe.github.io/2023Portfolio"
+    },
+    {
+        "name": "Justin Feldstein",
+        "portfolioImg": "",
+        "college": "College: Deleware"
+    },
+    {
+        "name": "Hayley Gold",
+        "portfolioImg": "Images/2023/HayleyGold.png",
+        "college": "College: Syracuse University",
+        "major": "Major: Computer Science",
+        "email": "Email: hmgold521@gmail.com or hmgold@syr.edu",
+        "quote": "What's the best air to breathe if you want to be rich?",
+        "punchline": "Millionaire",
+        "portfolio": "https://portfolio-2.hayleyg2.repl.co/?authuser=0"
+    },
+    {
+        "name": "Andrew Goodman",
+        "portfolioImg": "",
+        "college": "College: Quinnipac University"
+    },
+    {
+        "name": "Jacob Heller",
+        "portfolioImg": "",
+        "college": "Rutgers University"
+    },
+    {
+        "name": "Erin Hirschberger",
+        "portfolioImg": "Images/2023/ErinHirschberger.png",
+        "college": "College: Rutgers University",
+        "major": "Major: Information Technology and Informatics",
+        "email": "Email: eah31@optimum.net",
+        "quote": "One shot, that's all you got, write your own story you control the plot",
+        "portfolio": "https://eah645.github.io/SeniorPortfolio/index.html"
+    },
+    {
+        "name": "Chloe Lee",
+        "portfolioImg": "",
+        "college": "College: RPI"
+    },
+    {
+        "name": "Morgan Marsiello",
+        "portfolioImg": "",
+        "college": "College: University of South Florida"
+    },
+    {
+        "name": "Olivia Mertz",
+        "portfolioImg": "",
+        "college": "College: Sacred Heart University"
+    },
+    {
+        "name": "Jesse Padavano",
+        "portfolioImg": ""
+    },
+    {
+        "name": "Zain Rashid",
+        "portfolioImg": "",
+        "college": "College: Rutgers"
+    },
+    {
+        "name": "Clara Schepps",
+        "portfolioImg": "",
+        "college": "College: Drexel"
+    },
+    {
+        "name": "Rohan Shivlani",
+        "portfolioImg": "Images/2023/RohanShivlani.png",
+        "college": "College: Rutgers",
+        "email": "Email: RohanShivlani12@gmail.com",
+        "quote": "Work hard, play hard, and live life with no regrets",
+        "portfolio": "https://rohan1203s.github.io/FinalPortfolio/"
+    },
+    {
+        "name": "Jacob Sze",
+        "portfolioImg": "",
+        "college": "College: Rutgers"
+    },
+    {
+        "name": "Brandon Tepper",
+        "portfolioImg": "",
+        "college": "College: Michigan State"
+    },
+    {
+        "name": "Aditya Udhayakumar",
+        "portfolioImg": "",
+        "college": "College: Temple University"
+    },
+    {
+        "name": "Griffin Zieden-Weber",
+        "portfolioImg": "",
+        "college": "College: Rowan University"
+    },
+    {
+        "name": "Maxim Zinchenko",
+        "portfolioImg": ""
+    }
+]

@@ -1,207 +1,258 @@
 body {
-    height: 100%;
-    overflow-x: hidden;
-    /*All fonts should be default set to this*/
-    font-family: "myriad-pro", sans-serif;
-    font-weight: 1000;
-    font-style: bold;
+  height: 100%;
+  overflow-x: hidden;
+  /*All fonts should be default set to this*/
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 1000;
+  font-style: bold;
+  padding: 0px;
+}
+
+#homepage {
+  /*I'm not sure if black or white is better, gonna go with black for now but if you want it changed let me know because idk*/
+  background-color: black;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: black;
-    border-left: 1px solid #39B54A; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #39B54A; 
-  }
-  
-  /* Handle on hover */
-  /*Need to make this a darker shade of green so... fun we'll get that in a minute*/
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-  
-  
-  /*Landing page*/
-  
-  .header-text {
-    text-align: center;
-    margin-top: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    font-size: 4vw;
-  }
-  
-  .alumni {
-    font-size: 6vw;
-    text-align: center;
-    font-style: bold;
-    margin-top: 8vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-  }
-  
-  /*Lol ok something's already broken with this it's not applying*/
-  .logo-img {
-    display: block;
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    margin-right: 5vw;
-  }
+  width: 12px;
+}
 
-  .btn-div {
-    display: flex;
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  border-left: 1px solid #39B54A; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #39B54A; 
+}
+
+/* Handle on hover */
+/*Need to make this a darker shade of green so... fun we'll get that in a minute*/
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/*Landing page*/
+
+.header-text {
+  text-align: center;
+  margin-top: 5vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  font-size: 4vw;
+  color: white;
+}
+
+.alumni {
+  font-size: 7vw;
+  text-align: center;
+  font-style: bold;
+  margin-top: 8vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  color: white;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #39B54A;
+}
+
+/*Lol ok something's already broken with this it's not applying*/
+.logo-img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-right: 5vw;
+}
+
+.btn-div {
+  display: flex;
+justify-content: center;
+}
+
+.home-buttons {
+  background-color: black;
+  color: #39B54A;
+  border: 2px solid white;
+  padding: 5vh;
+  font-size: 4vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.home-buttons:hover {
+  background-color: #39B54A;
+  color: white;
+  transition: 1s;
+}
+
+/*This might work to make the text cool- like make it look outlined like adobe
+https://css-tricks.com/adding-stroke-to-web-text/ */
+h1 {
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+/*Teacher statement page*/
+.teacherNote {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 2vh;
+  height: 100vh;
+  font-family: 'Merriweather', serif;
+  line-height: 100vh;
+}
+
+.teacherNoteText {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*Alumni*/
+/*Alright time to suffer uh... I need to learn how to do vertical navbars my thought is let's just... do the class as a title and use a vertical nav and try and align it in a div?*/
+/*Vertical nav = put it in a column like col-3*/
+nav {
+  background-color: black;
+  border-bottom: 4px solid #39B54A;
+}
+
+.logo {
+  width: 20px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 1em;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: '';
+  background-color: #b84c05;
+  width: 0%;
+  height: 4px;
+  transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+.banner {
+  background: url("EatingOut2.jpg");
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
-  }
-  
-  .home-buttons {
-    background-color: black;
-    color: #39B54A;
-    padding: 5vh;
-    font-size: 4vh;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    border-radius: 30px;
-    transition: 1s;
-  }
-  
-  .home-buttons:hover {
-    background-color: #39B54A;
-    color: white;
-    transition: 1s;
-  }
-  
-  /*This might work to make the text cool- like make it look outlined like adobe
-  https://css-tricks.com/adding-stroke-to-web-text/ */
-  h1 {
-    color: black;
-    -webkit-text-fill-color: white;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-  }
-  
-  
-  /*Teacher statement page*/
-  .teacherNote {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    font-size: 2vh;
-    height: 100vh;
-    font-family: 'Merriweather', serif;
-    line-height: 100vh;
-  }
-  
-  .teacherNoteText {
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  /*Alumni*/
-  /*Alright time to suffer uh... I need to learn how to do vertical navbars my thought is let's just... do the class as a title and use a vertical nav and try and align it in a div?*/
-  /*Vertical nav = put it in a column like col-3*/
-  nav {
-    background-color: black;
-    border-bottom: 4px solid #39B54A;
-  }
+  align-items: center;
+  color: white;
+  opacity: 100%;
+}
 
 
-  .navbar {
-    padding: 0;
-  }
-  
-  .navbar .navbar-nav .nav-link {
-    padding: 1em;
-  }
-  
-  .navbar .navbar-nav .nav-item {
-    position: relative;
-  }
-  
-  .navbar .navbar-nav .nav-item::after {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    content: '';
-    background-color: #b84c05;
-    width: 0%;
-    height: 4px;
-    transition: all .5s;
-  }
-  
-  .navbar .navbar-nav .nav-item:hover::after {
-    width: 100%;
-  }
-  
-  .banner {
-    background: url("EatingOut2.jpg");
-    background-position: center;
-    overflow: hidden;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    opacity: 100%;
-  }
-  
+.alumni-title {
+  /*Holy shit check out the style it's so cool*/
+  text-align: center;
+  color: black;
+  -webkit-text-fill-color: black;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #39B54A;
+}
 
-  .alumni-title {
-    /*Holy shit check out the style it's so cool*/
-    text-align: center;
-    color: black;
-    -webkit-text-fill-color: black;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #39B54A;
-  }
-  
-  /*Can we do a hover effect with like a green background- I really like the style of things like- the green working as a divider and use that as a box shadow please*/
-  .card {
-    background-color: black;
-    /*Should the font be green or white... I like the green but we'll get another opinion*/
-    color: #39B54A;
-    border: 2px solid #39B54A;
-    margin: 20px;
-    padding: 20px;
-    /*Change this on smaller screens this works on my pc screen on mobile needs to stack*/
-    width: 22vw;
-    max-height: auto;
-  }
+/*Can we do a hover effect with like a green background- I really like the style of things like- the green working as a divider and use that as a box shadow please*/
+.card {
+  background-color: black;
+  /*Should the font be green or white... I like the green but we'll get another opinion*/
+  color: #39B54A;
+  border: 2px solid #39B54A;
+  margin: 20px;
+  padding: 20px;
+  /*Change this on smaller screens this works on my pc screen on mobile needs to stack*/
+  max-height: auto;
+}
 
-  .portfolio-link {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #39B54A;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid black;
-    transition: 1s;
-    text-decoration: none;
-  }
+.portfolio-link {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #39B54A;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid black;
+  transition: 1s;
+  text-decoration: none;
+}
 
-  .portfolio-link:hover {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #39B54A;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid white;
-    transition: 1s;
-    text-decoration: none;
-  }
+.portfolio-link:hover {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #39B54A;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid white;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.alumni-img {
+  max-width: 23vw;
+}
+
+.card {
+  max-width: 25vw;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  bottom: 0;
+}
+
+.footer-copyright {
+  margin-left: 4vw;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #39B54A;
+  padding-top: 10px;
+}
+
+.footer-div {
+  border-right: 1px solid white;
+}
+
+.footer-names {
+  padding-left: 3vw;
+}
+
+.footer-btn {
+  color: white;
+}
