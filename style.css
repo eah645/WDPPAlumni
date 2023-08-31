@@ -130,7 +130,7 @@ nav {
 }
 
 .logo {
-  width: 20px;
+  width: 40px;
 }
 
 .navbar {
@@ -185,6 +185,13 @@ nav {
   -webkit-text-stroke-color: #39B54A;
 }
 
+/*Why isn't this applying...*/
+/*Mixing up class and id ok it's been a while since I've done css*/
+/*Pixels so it stays consistent*/
+#alumni-body {
+  margin-top: 50px;
+}
+
 /*Can we do a hover effect with like a green background- I really like the style of things like- the green working as a divider and use that as a box shadow please*/
 .card {
   background-color: black;
@@ -223,10 +230,6 @@ nav {
 
 .alumni-img {
   max-width: 23vw;
-}
-
-.card {
-  max-width: 25vw;
 }
 
 footer {

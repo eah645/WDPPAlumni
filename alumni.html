@@ -26,61 +26,69 @@
 </head>
 
 
-<body id="alumniScroll">
+<body>
 
 
-  <nav class="navb navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img class="logo" src="Images\WDPPLogoGreenandBlack.png" class="floatleft">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body text-center">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <h5 class="offcanvas-title text-center" id="offcanvasNavbarLabel">
-              <img src="Images\WDPPLogoGreenandBlack.png"class="logonav"></h5>
-            <br>
 
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
-
-            <br>
-
-            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-
-            <br>
-
-            <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-
-            <br>
-
-            <li class="nav-item"><a class="nav-link" href="Store.html">Merch Store</a></li>
-          </ul>
-
-          <br>
-
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </nav>
 <!--Alright we'll finish the nav later... so how do I do this... I could do a class of hidden on each section to make this easy and link to like... multiple different json files... I should do the card first huh-->
-
+<!--The nav title won't apply because it needs to be in the vue thing-->
 
 
   <!--The body just has cards. That- that's literally it I'm thinking do separate json files for each one and do class=hidden or whatever it is so that then I can just use different onclick functions to make it visible-->
   <!--Alright yeah so for the title let's change that with a function- before this I should fix the navbar huh... or build a footer I'll do that-->
   <!--Changing this to json lol-->
-  <div id="2023-vue">
+  <!--put a margin on this that matches the height of the nav-->
+  <div id="alumni-body" class="container-fluid">
     <div id="vue_app_2023">
+
+
+      <!--Nav in here so I can set the title to change-->
+      <nav class="navb navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="Images\WDPPLogoGreenandBlack.png" class="floatleft">
+          </a>
+          <!--know what- let's just change this on click-->
+          <h1 class="alumni-title">Class of 2023</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <h5 class="offcanvas-title text-center" id="offcanvasNavbarLabel">
+                  <img src="Images\WDPPLogoGreenandBlack.png"class="logonav"></h5>
+                <br>
+    
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+    
+                <br>
+    
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+    
+                <br>
+    
+                <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+    
+                <br>
+    
+                <li class="nav-item"><a class="nav-link" href="Store.html">Merch Store</a></li>
+              </ul>
+    
+              <br>
+    
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div class="row">
         <!--Time to rebuild ok so- we'll make one template one and- ok wait this might be dumb since some people
         don't have jokes or quotes can I make an if statement / function like if quote = none... this is complicated fuck-->
