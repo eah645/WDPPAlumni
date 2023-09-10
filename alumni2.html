@@ -1,0 +1,153 @@
+<!--This is a test file, I wanna rebuild the alumni site because I'm thinking it's way too broken rn-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <!--This is bootstrap 5 because the nav looks entirely broken on bootstrap 4-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Animation css (credit: https://animate.style/)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Adobe font (Myriad Pro)-->
+  <link rel="stylesheet" href="https://use.typekit.net/ebw2ypa.css">
+  <!--My css-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <!--JQuery link idk if this'll work-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <!--Is the image not working?-->
+  <link rel="icon" href="Images\WDPPLogoGreenandBlack.png">
+  <title>MRHS WDPP Alumni</title>
+</head>
+
+<body id="homepage2">
+  <div class="headerRow">
+    <div class="row">
+      <div class="col-3" id="alumniBurger">
+    <!--Credit: https://codepen.io/kianoush/pen/GRpwZJy -->
+      <button mat-raised-button id="showInfos" color="primary">
+        <span>
+          <!--Credit: https://primer.style/design/foundations/icons/project-roadmap-24 -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M8.75 7a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5ZM7 11.75a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1-.75-.75ZM9.75 15a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"></path><path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25Z"></path></svg>
+        </span>
+      </button>
+      </div>
+      <div class="col-6">
+        <!--This changes depending on which class is selected, write a js function for each-->
+        <h1 class="alumni-title">Class of 2023</h1>
+      </div>
+      <!--This just makes sure the entire top is white, I think there's times where it glitches and the nav doesn't show right so this looks weird without it-->
+      <div class="col-3"></div>
+    </div>
+  </div>
+      <!--Navbar-->
+      <div id="activity-info" class="activity-info">
+        <!--Put a delay on all of this so it shows up after the menu opens
+        Make this a sticky nav- specifically just this section
+        Also maybe something with the y-overflow so I can scroll
+        Max out the Z index this needs to overlap-->
+        <div class="activity-container">
+          <div class="activity-header">
+            <div class="activity-info-title">
+              <!--Why do images break on here-->
+              <img src="Images/WDPPLogoGreenBlackandWhite.png" alt="WDPP Logo" id="NavLogo2">
+              <br>
+              <span class="alumniNavTitle">
+                Alumni Classes
+              </span>
+            </div>
+          </div>
+          <hr class="alumniBreak">
+          <div class="activity-content">
+            <div>
+              <div class="item">
+                <div class="item-label">Class of 2023</div>
+                <div class="item-value">
+                  <pfa-user-field [displayName]="oldEditModel.creator" [row]="false"></pfa-user-field>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="item">
+                <div class="item-label">Class of 2024</div>
+                <div class="item-value">
+                  <pfa-date-time-format [date]="oldEditModel.createdDate"></pfa-date-time-format>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="item">
+                <div class="item-label">
+                  Class of 2025
+                </div>
+                <div class="item-value">
+                  <pfa-user-field [row]="false" [displayName]="oldEditModel.lastChangeBy"></pfa-user-field>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="item">
+                <div class="item-label">
+                  Class of 2026
+                </div>
+                <div class="item-value">
+                  <pfa-date-time-format [date]="oldEditModel.lastChangeDate"></pfa-date-time-format>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="item">
+                <div class="item-label">
+                  Class of 2027
+                </div>
+                <div class="item-value">
+                  <pfa-user-field [displayName]="oldEditModel.deletedBy"></pfa-user-field>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="item">
+                <div class="item-label">
+                  Class of 2028
+                </div>
+                <div class="item-value">
+                  <pfa-date-time-format [date]="oldEditModel.deletedDate"></pfa-date-time-format>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="container-fluid">
+      <div id="vue_app_2023">
+        <div class="row">
+          <div class="col-lg-4 col-md-6" v-for="(temp, i) in First">
+            <div class="card">
+              <h5 class="card-title">{{ First[i].name }}</h5>
+              <img class="card-img-top" :src="First[i].portfolioImg" alt="Portfolio / Logo">
+              <div class="card-body">
+                <div class="card-text">
+                  <p class="college">{{ First[i].college }}</p>
+                  <small class="major">{{ First[i].major }}</small>
+                  <p>{{ First[i].email }}</p>
+                  <p> {{ First[i].quote }} <br>
+                    {{ First[i].punchline }}</p>
+                  </div>
+                  <a :href="First[i].portfolio" class="portfolio-link">Portfolio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </body>
+<script src="script.js"></script>
+
+</html>
